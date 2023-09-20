@@ -1,11 +1,11 @@
 import './App.css';
-import Welcome from './Welcome';
+import FunctionComp from './Welcome';
 import ClassComp from './ClassComp';
 
 function App() {
   return (
     <div className="App">
-      <Welcome/>
+      <FunctionComp/>
       <ClassComp/>
     </div>
   );

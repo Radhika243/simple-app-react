@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Welcome (){
-    return <h1>Hello Hanuman</h1>
+const Welcome = ()=>{
+    return <h1> Hanuman Sri Ram </h1>
 }
 
 export default Welcome;
