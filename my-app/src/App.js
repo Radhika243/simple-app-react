@@ -1,9 +1,10 @@
 import './App.css';
-import FunctionComp from './Welcome';
-import ClassComp from './ClassComp';
-import PropsEg from './PropsEg';
-import Greet from './Greet';
-import Message from './Message';
+import FunctionComp from './components/Welcome';
+import ClassComp from './components/ClassComp';
+import PropsEg from './components/PropsEg';
+import Greet from './components/Greet';
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ClassComp name="Ram Sita"/>
       <Message/>
       <PropsEg/>
+      <Counter/>
     </div>
   );
 }
