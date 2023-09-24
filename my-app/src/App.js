@@ -13,26 +13,30 @@ import StyleSheet from './components/styleSheet';
 import Inline from './components/inline';
 import Styles from './app.module.css'
 import FormHandler from './components/FormHandler';
+import LifeCycleA from './components/LifeCycleMethods/LifeCycleA';
+import LifeCycleC from './components/LifeCycleMethods/LifeCycleC';
 
 function App() {
   return (
     <div className="App">
-      <FunctionComp/>
-      <Greet heroName="superman"/>
-      <ClassComp name="Ram Sita"/>
-      <Message/>
-      <PropsEg/>
-      <Counter/>
-      <MessageChange/>
-      <ParentComponent/>
-      <Condition/>
-      <ListRender/>
-      <StyleSheet primary = {false}/>
-      <Inline/>
+      <FunctionComp />
+      <Greet heroName="superman" />
+      <ClassComp name="Ram Sita" />
+      <Message />
+      <PropsEg />
+      <Counter />
+      <MessageChange />
+      <ParentComponent />
+      <Condition />
+      <ListRender />
+      <StyleSheet primary={false} />
+      <Inline />
       <h1 className={Styles.error}> Error </h1>
       <h1 className='success'> Success </h1>
-      <FormHandler/>
-      
+      <FormHandler />
+      <LifeCycleA />
+      <LifeCycleC/>
+
     </div>
   );
 }
