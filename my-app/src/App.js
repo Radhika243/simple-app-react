@@ -5,6 +5,7 @@ import PropsEg from './components/PropsEg';
 import Greet from './components/Greet';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import MessageChange from './components/MessageChange';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Message/>
       <PropsEg/>
       <Counter/>
+      <MessageChange/>
     </div>
   );
 }

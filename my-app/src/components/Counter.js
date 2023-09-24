@@ -8,18 +8,26 @@ class Counter extends React.Component{
             count : 0
         }
     }
-    clickHandler(){
-       this.setState({
+    // clickHandler(){
+    //    this.setState({
+    //         count : this.state.count + 1
+    //    })
+    //    console.log(this.state.count)
+    // }
+
+    clickHandler=()=>{
+        this.setState({
             count : this.state.count + 1
-       })
-       console.log(this.state.count)
+        })
+        console.log(this.state.count)
     }
     render(){
         const {count} = this.state
         return(
             <div>
                 <h1>Counter - {this.state.count}</h1>
-                <button onClick={this.clickHandler.bind(this)}>Clicked {count} times</button>
+                {/* <button onClick={this.clickHandler.bind(this)}>Clicked {count} times</button> */}
+                <button onClick={this.clickHandler}>Clicked {count} times</button>
             </div>
         )
     }
