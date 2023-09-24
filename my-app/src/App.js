@@ -12,6 +12,7 @@ import ListRender from './components/ListRender';
 import StyleSheet from './components/styleSheet';
 import Inline from './components/inline';
 import Styles from './app.module.css'
+import FormHandler from './components/FormHandler';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Inline/>
       <h1 className={Styles.error}> Error </h1>
       <h1 className='success'> Success </h1>
+      <FormHandler/>
       
     </div>
   );
