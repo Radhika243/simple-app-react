@@ -7,6 +7,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import MessageChange from './components/MessageChange';
 import ParentComponent from './components/ParentComponent';
+import Condition from './components/Condition';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Counter/>
       <MessageChange/>
       <ParentComponent/>
+      <Condition/>
     
     </div>
   );
