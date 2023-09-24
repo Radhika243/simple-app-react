@@ -8,7 +8,10 @@ import Counter from './components/Counter';
 import MessageChange from './components/MessageChange';
 import ParentComponent from './components/ParentComponent';
 import Condition from './components/Condition';
-
+import ListRender from './components/ListRender';
+import StyleSheet from './components/styleSheet';
+import Inline from './components/inline';
+import Styles from './app.module.css'
 
 function App() {
   return (
@@ -22,7 +25,12 @@ function App() {
       <MessageChange/>
       <ParentComponent/>
       <Condition/>
-    
+      <ListRender/>
+      <StyleSheet primary = {false}/>
+      <Inline/>
+      <h1 className={Styles.error}> Error </h1>
+      <h1 className='success'> Success </h1>
+      
     </div>
   );
 }
