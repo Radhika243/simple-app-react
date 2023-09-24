@@ -6,6 +6,8 @@ import Greet from './components/Greet';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import MessageChange from './components/MessageChange';
+import ParentComponent from './components/ParentComponent';
+
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <PropsEg/>
       <Counter/>
       <MessageChange/>
+      <ParentComponent/>
+    
     </div>
   );
 }
