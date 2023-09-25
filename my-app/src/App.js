@@ -15,6 +15,9 @@ import Styles from './app.module.css'
 import FormHandler from './components/FormHandler';
 import LifeCycleA from './components/LifeCycleMethods/LifeCycleA';
 import LifeCycleC from './components/LifeCycleMethods/LifeCycleC';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+// import MemoComp from './components/MemoComp';
 
 function App() {
   return (
@@ -34,8 +37,11 @@ function App() {
       <h1 className={Styles.error}> Error </h1>
       <h1 className='success'> Success </h1>
       <FormHandler />
-      <LifeCycleA />
-      <LifeCycleC/>
+      {/* <LifeCycleA />
+      <LifeCycleC/> */}
+      {/* <PureComp/> */}
+      <ParentComp/>
+      {/* <MemoComp name="RamSita"/> */}
 
     </div>
   );
