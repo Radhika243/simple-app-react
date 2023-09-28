@@ -17,12 +17,14 @@ import LifeCycleA from './components/LifeCycleMethods/LifeCycleA';
 import LifeCycleC from './components/LifeCycleMethods/LifeCycleC';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 // import MemoComp from './components/MemoComp';
+
 
 function App() {
   return (
     <div className="App">
-      <FunctionComp />
+      {/* <FunctionComp />
       <Greet heroName="superman" />
       <ClassComp name="Ram Sita" />
       <Message />
@@ -36,12 +38,13 @@ function App() {
       <Inline />
       <h1 className={Styles.error}> Error </h1>
       <h1 className='success'> Success </h1>
-      <FormHandler />
+      <FormHandler /> */}
       {/* <LifeCycleA />
       <LifeCycleC/> */}
       {/* <PureComp/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
       {/* <MemoComp name="RamSita"/> */}
+      <RefsDemo/>
 
     </div>
   );
