@@ -18,6 +18,7 @@ import LifeCycleC from './components/LifeCycleMethods/LifeCycleC';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import CallbackRef from './components/CallbackRef';
 // import MemoComp from './components/MemoComp';
 
 
@@ -44,7 +45,8 @@ function App() {
       {/* <PureComp/> */}
       {/* <ParentComp/> */}
       {/* <MemoComp name="RamSita"/> */}
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+      <CallbackRef/>
 
     </div>
   );
