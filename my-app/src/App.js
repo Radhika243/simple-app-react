@@ -19,6 +19,8 @@ import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import CallbackRef from './components/CallbackRef';
+import FocusInput from './components/FocusInput';
+import ForwardRefParent from './components/ForwardRefParent';
 // import MemoComp from './components/MemoComp';
 
 
@@ -46,7 +48,9 @@ function App() {
       {/* <ParentComp/> */}
       {/* <MemoComp name="RamSita"/> */}
       {/* <RefsDemo/> */}
-      <CallbackRef/>
+      {/* <CallbackRef/> */}
+      <FocusInput/>
+      <ForwardRefParent/>
 
     </div>
   );
