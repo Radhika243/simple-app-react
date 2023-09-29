@@ -24,6 +24,9 @@ import ForwardRefParent from './components/ForwardRefParent';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import KeyPressCounter from './components/KeyPressCounter';
 // import MemoComp from './components/MemoComp';
 
 
@@ -55,7 +58,7 @@ function App() {
       {/* <FocusInput/>
       <ForwardRefParent/> */}
       {/* <PortalDemo/> */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
       <Hero heroName="superMan" /><br></br>
       </ErrorBoundary>
       <ErrorBoundary>
@@ -63,7 +66,11 @@ function App() {
       </ErrorBoundary>
       <ErrorBoundary>
       <Hero heroName="Joker"/>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+     <ClickCounter/>
+     <HoverCounter/>
+     <KeyPressCounter/>
+      
     </div>
   );
 }
