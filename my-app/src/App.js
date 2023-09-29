@@ -22,6 +22,8 @@ import CallbackRef from './components/CallbackRef';
 import FocusInput from './components/FocusInput';
 import ForwardRefParent from './components/ForwardRefParent';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 // import MemoComp from './components/MemoComp';
 
 
@@ -52,8 +54,16 @@ function App() {
       {/* <CallbackRef/> */}
       {/* <FocusInput/>
       <ForwardRefParent/> */}
-      <PortalDemo/>
-
+      {/* <PortalDemo/> */}
+      <ErrorBoundary>
+      <Hero heroName="superMan" /><br></br>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName="batMan" /><br></br>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName="Joker"/>
+      </ErrorBoundary>
     </div>
   );
 }
