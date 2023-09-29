@@ -21,6 +21,7 @@ import RefsDemo from './components/RefsDemo';
 import CallbackRef from './components/CallbackRef';
 import FocusInput from './components/FocusInput';
 import ForwardRefParent from './components/ForwardRefParent';
+import PortalDemo from './components/PortalDemo';
 // import MemoComp from './components/MemoComp';
 
 
@@ -49,8 +50,9 @@ function App() {
       {/* <MemoComp name="RamSita"/> */}
       {/* <RefsDemo/> */}
       {/* <CallbackRef/> */}
-      <FocusInput/>
-      <ForwardRefParent/>
+      {/* <FocusInput/>
+      <ForwardRefParent/> */}
+      <PortalDemo/>
 
     </div>
   );
