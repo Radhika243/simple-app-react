@@ -67,7 +67,7 @@ function App() {
       <ErrorBoundary>
       <Hero heroName="Joker"/>
       </ErrorBoundary> */}
-     <ClickCounter/>
+     <ClickCounter name="Hanuman" />
      <HoverCounter/>
      <KeyPressCounter/>
       
