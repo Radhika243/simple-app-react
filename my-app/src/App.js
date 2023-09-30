@@ -31,6 +31,8 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import Counter1 from './components/Counter1';
+import ComponentC from './context/ComponentC';
+import { UserProvider } from './context/userContext';
 // import MemoComp from './components/MemoComp';
 
 
@@ -80,10 +82,16 @@ function App() {
      {/* <ClickCounterTwo/>
      <HoverCounterTwo/>
      <User render={(isLoggedIn)=>isLoggedIn ? "Hanuman" : "Guest"}/> */}
-      <Counter1 render={(count,incrementCount)=>
+      {/* <Counter1 render={(count,incrementCount)=>
         <ClickCounterTwo count={count} incrementCount={incrementCount}/>}/>
          <Counter1 render={(count,incrementCount)=>
-        <HoverCounterTwo count={count} incrementCount={incrementCount}/>}/>
+        <HoverCounterTwo count={count} incrementCount={incrementCount}/>}/> */}
+
+        {/* Provider component is responsible for providing the value to descendent component 
+        We provided the Value in Component C(nested inside) that can be consumed by the component F*/}
+        <UserProvider value="Ram">
+          <ComponentC/>
+        </UserProvider>
     </div>
   );
 }
