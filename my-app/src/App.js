@@ -33,6 +33,8 @@ import User from './components/User';
 import Counter1 from './components/Counter1';
 import ComponentC from './context/ComponentC';
 import { UserProvider } from './context/userContext';
+import PostList from './http-components/PostList';
+import AddList from './http-components/AddList';
 // import MemoComp from './components/MemoComp';
 
 
@@ -89,9 +91,13 @@ function App() {
 
         {/* Provider component is responsible for providing the value to descendent component 
         We provided the Value in Component C(nested inside) that can be consumed by the component F*/}
-        <UserProvider value="Ram">
+        {/* <UserProvider value="Ram">
           <ComponentC/>
-        </UserProvider>
+        </UserProvider> */}
+
+        <PostList/>
+        <AddList/>
+
     </div>
   );
 }
