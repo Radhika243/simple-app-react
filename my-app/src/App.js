@@ -35,6 +35,10 @@ import ComponentC from './context/ComponentC';
 import { UserProvider } from './context/userContext';
 import PostList from './http-components/PostList';
 import AddList from './http-components/AddList';
+import HookCounter from './hooks/HookCounter';
+import HookCounterTwo from './hooks/HookCounterTwo';
+import HookCounterThree from './hooks/HookCounterThree';
+import HookCounterArray from './hooks/HookCounterArray';
 // import MemoComp from './components/MemoComp';
 
 
@@ -95,8 +99,17 @@ function App() {
           <ComponentC/>
         </UserProvider> */}
 
-        <PostList/>
-        <AddList/>
+        {/* <PostList/>
+        <AddList/> */}
+        <HookCounter/>
+        <br></br>
+        <HookCounterTwo/>
+
+        <br/>
+        <HookCounterThree/>
+        <br>
+        </br>
+        <HookCounterArray/>
 
     </div>
   );
