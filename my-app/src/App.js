@@ -39,6 +39,14 @@ import HookCounter from './hooks/HookCounter';
 import HookCounterTwo from './hooks/HookCounterTwo';
 import HookCounterThree from './hooks/HookCounterThree';
 import HookCounterArray from './hooks/HookCounterArray';
+import UseEffectOne from './hooks/UseEffectOne';
+import ClassMouse from './components/ClassMouse';
+import HookMouse from './hooks/HookMouse';
+import MouseContainer from './hooks/MouseContainer';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './hooks/IntervalHookCounter';
+import DataFetching from './hooks/DataFetching';
+import DataFetchingOnButtonClick from './hooks/DataFetchingOnButtonClick';
 // import MemoComp from './components/MemoComp';
 
 
@@ -101,7 +109,7 @@ function App() {
 
         {/* <PostList/>
         <AddList/> */}
-        <HookCounter/>
+        {/* <HookCounter/>
         <br></br>
         <HookCounterTwo/>
 
@@ -109,7 +117,19 @@ function App() {
         <HookCounterThree/>
         <br>
         </br>
-        <HookCounterArray/>
+        <HookCounterArray/> */}
+
+
+        <UseEffectOne/>
+
+        <br></br>
+        <ClassMouse/> 
+         <HookMouse/> 
+         <MouseContainer/>
+        <IntervalClassCounter/>
+        <IntervalHookCounter/>
+        <DataFetching/>
+        <DataFetchingOnButtonClick/>
 
     </div>
   );
