@@ -47,19 +47,48 @@ import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './hooks/IntervalHookCounter';
 import DataFetching from './hooks/DataFetching';
 import DataFetchingOnButtonClick from './hooks/DataFetchingOnButtonClick';
-import React from 'react';
+import React,{useReducer} from 'react';
 import ComponentCO from './hooks/ComponentCO';
 import Counter2 from './hooks/UseReducerHook/Counter2';
 import Counter3 from './hooks/UseReducerHook/Counter3';
 import Counter4 from './hooks/UseReducerHook/Counter4';
 import Counter5 from './hooks/UseReducerHook/Counter5';
+import ComponentA from './useReducer/ComponentA';
+import ComponentB from './useReducer/ComponentB';
+import ComponentCOO from './useReducer/ComponentCOO';
 
 // import MemoComp from './components/MemoComp';
 
 export const UserContext1 = React.createContext()
 export const Channelcontext1 = React.createContext()
 
+export const CountContext = React.createContext()
+
+const initialState = 0;
+//2nd step
+//action ---> instruction to reducer function, based on the action specified the reducer function performs necessary state transactions
+const reducer = (currentState,action) =>{
+    //return newState
+    switch(action){
+        case 'increment':
+            return currentState + 1;
+           
+        case 'decrement':
+            return currentState - 1;
+           
+        case 'reset':
+            return initialState;
+       
+        default:
+            return currentState
+    }
+
+}
+
+
+
 function App() {
+  const [count,dispatch] = useReducer(reducer,initialState)
   return (
     <div className="App">
       {/* <FunctionComp />
@@ -147,10 +176,22 @@ function App() {
           </Channelcontext1.Provider>
         </UserContext1.Provider> */}
 
-        <Counter2/>
+        {/* <Counter2/>
         <Counter3/>
         <Counter4/>
-        <Counter5/>
+        <Counter5/> */}
+
+        <CountContext.Provider value={{countState : count, countDispatch : dispatch}}>
+          <div className="App">
+            Count = {count}
+              <ComponentA/>
+              <ComponentB/>
+              <ComponentCOO/>
+          </div>
+        </CountContext.Provider>
+  
+
+        
 
        </div>
   );
