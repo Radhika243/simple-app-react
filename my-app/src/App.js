@@ -49,12 +49,15 @@ import DataFetching from './hooks/DataFetching';
 import DataFetchingOnButtonClick from './hooks/DataFetchingOnButtonClick';
 import React from 'react';
 import ComponentCO from './hooks/ComponentCO';
+import Counter2 from './hooks/UseReducerHook/Counter2';
+import Counter3 from './hooks/UseReducerHook/Counter3';
+import Counter4 from './hooks/UseReducerHook/Counter4';
+import Counter5 from './hooks/UseReducerHook/Counter5';
+
 // import MemoComp from './components/MemoComp';
 
 export const UserContext1 = React.createContext()
 export const Channelcontext1 = React.createContext()
-
-
 
 function App() {
   return (
@@ -138,14 +141,18 @@ function App() {
         <DataFetchingOnButtonClick/> */}
 
         <br />
-        <UserContext1.Provider value={'Ram Sita'}>
+        {/* <UserContext1.Provider value={'Ram Sita'}>
           <Channelcontext1.Provider value={'Hanuman'}>
           <ComponentCO />
           </Channelcontext1.Provider>
-        </UserContext1.Provider>
+        </UserContext1.Provider> */}
 
+        <Counter2/>
+        <Counter3/>
+        <Counter4/>
+        <Counter5/>
 
-    </div>
+       </div>
   );
 }
 
