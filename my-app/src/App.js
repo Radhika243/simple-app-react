@@ -60,6 +60,8 @@ import DataFetchingOne from './useReducer/DataFetchingOne';
 import DataFetchingUseReducer from './useReducer/DataFetchingUseReducer';
 import ParentComponento from './useCallback/ParentComponento';
 import CounterMemo from './useMemo/CounterMemo';
+import FocusInput1 from './useRef/FocusInput1';
+import HookTimer from './useRef/HookTimer';
 
 // import MemoComp from './components/MemoComp';
 
@@ -200,7 +202,10 @@ function App() {
 
       {/* <ParentComponento/> */}
 
-      <CounterMemo/>
+      {/* <CounterMemo/> */}
+
+      <FocusInput1/><br />
+      <HookTimer />
 
         
 
