@@ -47,7 +47,13 @@ import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './hooks/IntervalHookCounter';
 import DataFetching from './hooks/DataFetching';
 import DataFetchingOnButtonClick from './hooks/DataFetchingOnButtonClick';
+import React from 'react';
+import ComponentCO from './hooks/ComponentCO';
 // import MemoComp from './components/MemoComp';
+
+export const UserContext1 = React.createContext()
+export const Channelcontext1 = React.createContext()
+
 
 
 function App() {
@@ -120,7 +126,7 @@ function App() {
         <HookCounterArray/> */}
 
 
-        <UseEffectOne/>
+        {/* <UseEffectOne/>
 
         <br></br>
         <ClassMouse/> 
@@ -129,7 +135,15 @@ function App() {
         <IntervalClassCounter/>
         <IntervalHookCounter/>
         <DataFetching/>
-        <DataFetchingOnButtonClick/>
+        <DataFetchingOnButtonClick/> */}
+
+        <br />
+        <UserContext1.Provider value={'Ram Sita'}>
+          <Channelcontext1.Provider value={'Hanuman'}>
+          <ComponentCO />
+          </Channelcontext1.Provider>
+        </UserContext1.Provider>
+
 
     </div>
   );
