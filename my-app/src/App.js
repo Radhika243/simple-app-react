@@ -56,6 +56,8 @@ import Counter5 from './hooks/UseReducerHook/Counter5';
 import ComponentA from './useReducer/ComponentA';
 import ComponentB from './useReducer/ComponentB';
 import ComponentCOO from './useReducer/ComponentCOO';
+import DataFetchingOne from './useReducer/DataFetchingOne';
+import DataFetchingUseReducer from './useReducer/DataFetchingUseReducer';
 
 // import MemoComp from './components/MemoComp';
 
@@ -181,7 +183,7 @@ function App() {
         <Counter4/>
         <Counter5/> */}
 
-        <CountContext.Provider value={{countState : count, countDispatch : dispatch}}>
+        {/* <CountContext.Provider value={{countState : count, countDispatch : dispatch}}>
           <div className="App">
             Count = {count}
               <ComponentA/>
@@ -189,7 +191,10 @@ function App() {
               <ComponentCOO/>
           </div>
         </CountContext.Provider>
-  
+   */}
+
+      <DataFetchingOne/><br/>
+      <DataFetchingUseReducer/>
 
         
 
