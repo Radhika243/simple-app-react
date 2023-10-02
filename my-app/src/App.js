@@ -58,6 +58,7 @@ import ComponentB from './useReducer/ComponentB';
 import ComponentCOO from './useReducer/ComponentCOO';
 import DataFetchingOne from './useReducer/DataFetchingOne';
 import DataFetchingUseReducer from './useReducer/DataFetchingUseReducer';
+import ParentComponento from './useCallback/ParentComponento';
 
 // import MemoComp from './components/MemoComp';
 
@@ -193,8 +194,10 @@ function App() {
         </CountContext.Provider>
    */}
 
-      <DataFetchingOne/><br/>
-      <DataFetchingUseReducer/>
+      {/* <DataFetchingOne/><br/>
+      <DataFetchingUseReducer/> */}
+
+      <ParentComponento/>
 
         
 
