@@ -59,6 +59,7 @@ import ComponentCOO from './useReducer/ComponentCOO';
 import DataFetchingOne from './useReducer/DataFetchingOne';
 import DataFetchingUseReducer from './useReducer/DataFetchingUseReducer';
 import ParentComponento from './useCallback/ParentComponento';
+import CounterMemo from './useMemo/CounterMemo';
 
 // import MemoComp from './components/MemoComp';
 
@@ -197,7 +198,9 @@ function App() {
       {/* <DataFetchingOne/><br/>
       <DataFetchingUseReducer/> */}
 
-      <ParentComponento/>
+      {/* <ParentComponento/> */}
+
+      <CounterMemo/>
 
         
 
