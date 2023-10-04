@@ -62,6 +62,12 @@ import ParentComponento from './useCallback/ParentComponento';
 import CounterMemo from './useMemo/CounterMemo';
 import FocusInput1 from './useRef/FocusInput1';
 import HookTimer from './useRef/HookTimer';
+import DocTitle1 from './custom-hook/DocTitle1';
+import DocTitle2 from './custom-hook/DocTitle2';
+import UseDocumentTitle from './custom-hook/useDocumentTitle';
+import CounterCustom from './custom-hook/CounterCustom';
+import CounterCustom2 from './custom-hook/CounterCustom2';
+import UserForm from './custom-hook/UserForm';
 
 // import MemoComp from './components/MemoComp';
 
@@ -205,7 +211,22 @@ function App() {
       {/* <CounterMemo/> */}
 
       <FocusInput1/><br />
-      <HookTimer />
+      <HookTimer /><br>
+      </br>
+
+      <DocTitle1/>
+      <DocTitle2 />
+      <br></br>
+      <UseDocumentTitle />
+      <br/>
+      <br/>
+      <br/>
+
+      <CounterCustom />
+      <CounterCustom2/><br/>
+      <br/>
+
+      <UserForm/>
 
         
 
